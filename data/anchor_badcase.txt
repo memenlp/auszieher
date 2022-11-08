@@ -1,0 +1,29 @@
+# token\tpos\tdep
+as well		
+not need		
+not wear		
+not warn		
+not know		
+not hear		
+# do not		
+not see		
+not call		
+not care		
+not wait		
+not have to		
+not start		
+not tolerate		
+not talk		
+light performance		
+right eye		
+right hand		
+good luck		
+seem like		
+smart watch		
+be like		
+top bar		
+’ not		
+clean	VERB	
+mess	VERB	
+thank	NOUN	
+light	VERB	

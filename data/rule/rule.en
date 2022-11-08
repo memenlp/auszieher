@@ -1,0 +1,392 @@
+# One thing I like very much is the length of time between charges.
+0	<(1,,NOUN,thing,P),(0,relcl,,,E)><(0),(2,nsubj,PRON,,H)><(3,,AUX,be,P),(1)><(3),(4,attr,,,R)>
+
+# easy to set up and i love that the watch comes on with a slight turn of the wrist.
+1	<(0,!conj,ADJ,,R),(1,xcomp,VERB,,R)><(1),(2,aux,PART,,R)>
+2	<(0,,,,E),(1,nsubj,PRON,,H)><(0),(2,ccomp,VERB,,R)><(2),(3,nsubj,NOUN|PROPN,,O)>
+
+# I love that when I rotate my wrist to see it, it just turns on .
+3	<(0,,VERB,,E),(1,nsubj,,,H)><(0),(2,ccomp,VERB,,O)><(2),(3,advcl,VERB,,R,#TREEROOT#)><(2),(4,nsubj,PRON|NOUN|PROPN,,O)><(2),(5,mark,SCONJ,that,P)>
+
+# I love that is looks like the Apple Watch but is NOT Apple .
+##4	<(0,,,,E),(1,nsubj,,,H)><(0),(2,ccomp,AUX,,P)><(2),(3,attr,NOUN|PROPN,,R)><(3),(4,prep,ADP,,R)><(4),(5,pobj,NOUN|PROPN,,R)>
+4	<(0,,,,E),(1,nsubj,,,H)><(0),(2,ccomp,AUX,,P)><(2),(3,attr,NOUN|PROPN,,R)>
+
+# I love that I can see my oxygen levels, heartbeat , temperature , track my steps , workout , accept calls and notify me of emails , texts , calendar reminders , etc, etc ...
+5	<(0,,,,E),(1,ccomp,VERB,,R)><(0),(2,nsubj,PRON,,H)><(1),(3,dobj,NOUN|PROPN,,R)><(1), (4,aux,AUX,can,R)>
+
+# I was excited about this device since the power cords were built in .
+6	<(1,,AUX,be,P),(0,acomp,,,E)><(1),(2,nsubj,,,H)><(0),(3,advcl,VERB,,R)><(3),(4,nsubjpass,NOUN|PROPN,,R)><(3),(5,prep,,,R)>
+
+# I love that it can plug right into the wall to charge itself.
+7	<(0,,,,E),(1,nsubj,,,H)><(0),(2,ccomp,VERB,,R)><(2),(3,advcl,VERB,,R)><(3),(4,dobj,,,R)>
+8	<(0,,,,E),(1,nsubj,,,H)><(0),(2,ccomp,VERB,,R)><(2),(3,nsubj,PRON|NOUN,,O)><(2),(4,advcl,VERB,,R)><(4),(5,dobj,,,R)>
+
+# I also like the fact that I can shower with it on with complete confidence that it is waterproof.
+9	<(0,,VERB,,E),(1,nsubj,,,H)><(0),(2,dobj,NOUN,,P)><(2),(3,acl,VERB,,R)>
+
+# It's easy to understand, and it works well.
+# the app is easy to use and the watch itself is easy to figure out
+##TODO: badcase: Fit well but blue screen makes screen hard to read
+10	<(1,,VERB,,R),(0,advmod,ADV,,R)><(1),(2,nsubj,PRON|NOUN,,O)>
+
+# this watch is great for its price!
+# the watch is good and beautiful
+11	<(1,,AUX,,R),(0,acomp,,,R)><(1),(2,nsubj,NOUN|PRON,!I|!you|!he|!she,O)>
+
+# Auto scan does not work.
+12	<(0,!conj,,,R),(1,nsubj,NOUN|PROPN,,O)>
+
+# I didn't like the silicone watch band that came with, so I changed it to a  Para Cord band.
+## !one : [badcase]: I like one that allows me to keep a personal picture on the face.
+13	<(0,,,,E),(1,nsubj,PRON,,H)><(0),(2,dobj,NOUN,!one,O)>
+
+# the menus are well organized which is easy to find what you want
+14	<(1,acomp,ADJ,,R),(0,advmod,,,R)><(2,,AUX,be,P),(1)><(2),(3,nsubj,NOUN|PRON,,O)>
+15	<(1,,AUX,be,P),(0,acomp,ADJ,,R)><(1),(2,nsubj,PRON,it|this|thest|that,O)><(0),(3,xcomp,VERB,,R)><(3),(4,aux,PART,,R)>
+
+# The great thing about this watch is the fitness tracking
+16	<(1,,NOUN,thing,P),(0,,,,R)><(1),(2,prep,,about,P)><(2),(3,pobj,NOUN,,O)><(4,,AUX,be,P),(1)><(4),(5,attr,NOUN|PROPN,,O)>
+
+# beautiful and practical
+# worthy of this price
+17	<(0,ROOT,ADJ,,R),(0,ROOT,ADJ,,R)>
+
+# it is easy to get your hands on
+18	<(1,,AUX,be,P),(0,,,,R)><(1),(2,nsubj,PRON,it,O)><(1),(3,xcomp,VERB,,R)><(3),(4,dobj,NOUN,,R)>
+
+# the battery it's durable
+19	<(1,,AUX,be,R),(0,,,,R)><(1),(2,dep,NOUN,,O)>
+
+# Really like the design and the color I chose.
+20	<(0,!prep|ROOT,,,E),(1,pobj,NOUN|PROPN,,O)>
+
+# but aside from that, the watch is very well made and seems durable and for what i’m using it for it does the job.
+21	<(1,,VERB,,R),(0,advmod,ADV,,R)><(1),(2,nsubjpass,NOUN,,O)>
+
+# beautiful look band
+22	<(1,,VERB,,R),(0,amod,ADJ,,R)><(1),(2,npadvmod,NOUN,,O)>
+
+# The widget function is disabled, you have to log in again and again. 
+23	<(0,,VERB,,R),(1,nsubjpass,NOUN,,O)><(0),(2,auxpass,AUX,be,P)>
+
+# Says panel not support update app
+##24	<(0,,,,R),(1,nsubj,NOUN,,O)><(0),(2,dobj,NOUN,,R)>
+24	<(0,ROOT|ccomp,,!love|!like,R),(1,nsubj,NOUN,,O)><(0),(2,dobj,NOUN,,R)>
+
+# will not work with Alexa Routines now
+25	<(0,!advcl,VERB,,R),(1,prep,ADP,,R)><(1),(2,pobj,PROPN|NOUN,,R)>
+
+# This is the only option I needed for my daily watch since I can't use my phone much during work
+## todo:处理不了
+26	<(0,!advcl,VERB,,R),(1,prep,ADP,,R)><(0),(2,dobj,NOUN,,O)><(1),(3,pobj,PROPN|NOUN,,R)>
+
+# poor network connection
+# stb box not compatible with zgemma / air digital.
+## !attr: [badcase]: Flashlight, find my phone features are a good addition.
+27	<(1,pobj|conj|!attr|dobj|dep|ROOT,NOUN|PROPN,,O,,,!for),(0,amod,ADJ|VERB,,R)>
+
+# the book is funnily
+28	<(1,,AUX,be,R),(0,,,,R)><(1),(2,nsubj,NOUN,!reason,O)>
+
+# I have never owned or used a windows device that is so affordable, lightweight, and functional.
+29	<(1,relcl,AUX,be,R),(0,,,,R)><(2,dobj,NOUN,,O),(1)>
+
+# It's just impossible to switch out of the S Mode.
+30	<(1,,AUX,be,R),(0,acomp,ADJ,,R)><(1),(2,nsubj,PRON|NOUN,,O)><(1),(3,xcomp,VERB,,R)>
+
+# I love that it is light weight and easy to transport.
+31	<(0,,VERB,,E),(1,nsubj,PRON,,H)><(0),(2,ccomp,AUX,be,P)><(2),(3,nsubj,PRON,,O)><(2),(4,attr,NOUN,,R)><(4),(5,amod,ADJ,,R)>
+
+# I really loved no extra cords.
+32	<(0,,VERB,,E),(1,nsubj,PRON,,H)><(0),(2,dobj,NOUN,,R)><(2),(3,amod,ADJ,,R)><(2),(4,det,DET,no,R)>
+
+# I think it's a pretty good watch for the price point.
+## 33	<(1,attr,NOUN,,R),(0,amod,ADJ,,R)><(2,!relcl,AUX,be,P),(1)><(2),(3,nsubj,NOUN|PRON,,O)>
+
+# Watch UI is very intuitive, clean and simple to operate.
+34	<(1,,AUX,,R),(0,acomp,,,R)><(1),(2,nsubj,NOUN|PROP|PROPN,,O)>
+
+# this watch has ALEXA feature which is a great feature for the price
+## 与31不同
+35	<(1,attr,NOUN,,R),(0,amod,ADJ,,R)><(2,relcl,AUX,be,P),(1)><(3,,NOUN,,O),(2)>
+
+# I think it's a pretty good watch for the price point.
+# Overall this is a fantastic watch for the price
+## 33修改而来
+36	<(1,attr,NOUN,,O),(0,amod,ADJ,,R)><(1),(2,prep,ADP,for,R)><(2),(3,pobj,NOUN,,R)>
+
+# It doesn't have special function for turning the dial.
+37	<(0,,VERB,,R),(1,nsubj,PRON,,O)><(0),(2,dobj,NOUN,,R)><(2),(3,prep,ADP,for,R)><(3),(4,pcomp,VERB,,R)>
+
+# The Fitness apps seem to work very well and very easy to use.
+38	<(1,xcomp,VERB,,R),(0,advmod,ADV,,R)><(2,,VERB,seem,P),(1)><(2),(3,nsubj,NOUN|PROPN,,O)>
+
+# I like one that allows me to keep a personal picture on the face.
+39	<(0,,VERB,,E),(1,nsubj,PRON,,H)><(0),(2,dobj,NOUN,one,P)><(2),(3,relcl,VERB,,R)><(3),(4,ccomp,VERB,,R)><(4),(5,dobj,NOUN,,R)>
+
+# Watch UI is very intuitive, clean and simple to operate.
+40	<(1,ROOT|ccomp,AUX,be,R),(0,acomp,ADJ,,R)><(1),(2,nsubj,PROPN|NOUN|VERB,,O)>
+42	<(1,,AUX,be,R),(0,acomp,ADJ,,R)><(1),(2,nsubj,NOUN,,O)><(2),(3,prep,ADP,of,O)><(3),(4,pobj,NOUN,,O)>
+
+# It is very light and also waterproof.
+41	<(1,ROOT|pcomp|ccomp,AUX,be,R),(0,acomp,ADJ,,R)><(1),(2,nsubj,PRON,it|this|these|that,O)>
+
+# The price of this little watch is doable.
+### 42	<(1,ROOT,AUX,be,R),(0,acomp,ADJ,,R)><(1),(2,nsubj,NOUN,,O)><(2),(3,prep,ADP,of,O)><(3),(4,pobj,NOUN,,O)>
+
+# The App downloaded easily and works well
+43	<(1,,VERB,,R),(0,advmod,ADV,,R)><(1),(2,nsubj,PROPN|NOUN,,O)>
+
+# Easy set up, convenient, band comfortable.
+44	<(0,ROOT,ADJ,,R), (1,npadvmod,NOUN,,O)>
+45	<(1,ROOT|amod,VERB,,R),(0,amod,ADJ,,R)>
+
+# Best thing of this watch is the PRICE.
+46	<(1,nsubj,NOUN,thing,R),(0,amod,ADJ,,R)><(2,,AUX,be,P),(1)><(2),(3,attr,NOUN|PROPN,,O)>
+
+# My wife loves the speed of the processor, huge storage
+## 与24的区别
+47	<(0,ROOT|ccomp,,,E),(1,nsubj,NOUN,,H)><(0),(2,dobj,NOUN,,O)>
+
+# The graphics are poor and they have a lot of apps that do not even work with flagship phones.
+## 与25的区别
+48	<(0,!advcl,VERB,,R),(1,prep,ADP,,R)><(1),(2,pobj,PROPN|NOUN,,R)><(3,,NOUN|PRON|PROPN,,O),(0)>
+49	<(0,!advcl,VERB,,R),(1,prep,ADP,,R)><(1),(2,pobj,PROPN|NOUN,,R)><(0),(3,nsubj,NOUN|PRON|PROPN,,O)>
+
+# Absolutely love the \"live\" heart rate monitoring and the ability to see average HR in the Garmin Connect app.
+50	<(0,ROOT,VERB,,E),(1,dobj,NOUN,,O)>
+
+# the only reason I give it 4 stars vs 5 is the lack of touch screen functionality.
+51	<(1,,AUX,be,R),(0,,,,R)><(1),(2,nsubj,NOUN,reason,P)>
+
+# I love this device since the cords are built in.
+## 13 升级
+52	<(0,,,,E),(1,nsubj,PRON,,H)><(0),(2,dobj,NOUN,!one,O)><(0),(3,advcl,VERB,,R)><(3),(4,mark,SCONJ,since|because,P)><(3),(5,nsubjpass|nsubj,NOUN,,R)>
+
+# I hate the fact that this device is cheap
+## 13 升级
+53	<(0,,,,E),(1,nsubj,PRON,,H)><(0),(2,dobj,NOUN,fact,P)><(2),(3,acl,AUX,,R)><(3),(4,nsubj,NOUN,,R)><(3),(5,acomp,ADJ,,R)>
+
+# I love this device since the cords are built in.
+54	<(0,,,,E),(1,nsubj,PRON,,H)><(0),(2,dobj,NOUN,!one,O)><(0),(3,advcl,VERB,,R,#TREEROOT#)><(3),(4,mark,SCONJ,,P)>
+
+# Flashlight, find my phone features are a good addition.
+## badcase: This is a very nice lightweight pack with no whistlesand bells.
+55	<(1,attr,NOUN|PROPN,,R),(0,amod,ADJ,,R)><(2,,AUX,be,R),(1)><(2),(3,nsubj,NOUN|PROPN|PRON,!this,O)>
+
+# Perfect safety net for camera
+##56	<(1,ROOT,NOUN|PROPN,,O),(0,amod,VERB|ADJ,,R)>
+
+# works great
+##TODO: badcase: easy to set up and i love that the watch comes on with a slight turn of the wrist. 
+57	<(1,ROOT|conj,VERB,!love,R),(0,advmod,ADJ|ADV,,R)>
+
+# Fit well but blue screen makes screen hard to read
+## badcase: It looks quite professional and is very well constructed. 
+58	<(0,advmod,ADV,,R),(1,advmod,ADV,!very,R)>
+59	<(1,ROOT,VERB,,R),(0,ccomp,ADJ,,R)><(1),(2,nsubj,NOUN,,O)><(0),(3,xcomp,VERB,,R)>
+
+# Very happy with product and supplier.
+60	<(0,ROOT,ADJ,,E),(1,prep,ADP,,O)><(1),(2,pobj,NOUN,,O)>
+
+# I am very happy with the purchase and love to wear it even to work
+# All in all this is a quality product and I am happy with it.
+## 0 属于emotion words
+61	<(1,,AUX,be,P),(0,acomp,ADJ,,E)><(1),(2,nsubj,PRON,,H)><(0),(3,prep,ADP,with,P)><(3),(4,pobj,NOUN|PRON,!I|!she|!you|!he,O)>
+
+# Perfect timing with Russia to stock up on products like this
+62	<(0,ROOT,ADJ,,R),(1,dobj,NOUN,,O)><(1),(2,advcl,VERB,,O)>
+
+# Love that the tree is getting put to good use and not left like so many I’ve seen after the storms!
+63	<(0,ROOT,VERB,,E),(1,ccomp,VERB,,R,#TREEROOT#)><(1),(2,mark,SCONJ,,P)>
+64	<(0,ROOT,VERB,,E),(1,ccomp,VERB|AUX,,R,#TREEROOT#)><(0),(2,nsubj,PRON|NOUN,,H)><(1),(3,mark,SCONJ,,P)>
+
+# Have fun traveling and stay safe.
+65	<(1,dobj,VERB,,O),(0,nsubj,NOUN,,R)>
+66	<(1,ROOT|conj,VERB,,R),(0,acomp,ADJ,,R)>
+67	<(1,ROOT|conj|ccomp,VERB,,R),(0,acomp,ADJ,,R)><(1),(2,nsubj,PRON|NOUN|PROPN,,O)>
+
+# I love being able to change my van from camping mode, to passenger mode (rare), or to hauling mode.
+68	<(0,,VERB,,E),(1,nsubj,PRON,,H)><(0),(2,xcomp,AUX,,P)><(2),(3,,,able,P)><(3),(4,xcomp,VERB,,O)>
+69	<(0,,VERB,,E),(1,nsubj,PRON,,H)><(0),(2,xcomp,AUX,,P)><(2),(3,,,able,P)><(3),(4,xcomp,VERB,,O)><(4),(5,prep,ADP,,O)><(5),(6,pobj,NOUN,,O)>
+
+# great products
+# great video
+70	<(1,ROOT|appos|nsubj,NOUN,,O,,,!for),(0,amod,ADJ|PROPN,,R)>
+
+# So happy you finally got your door
+71	<(0,ROOT,ADJ,,E),(1,ccomp,VERB,,R)><(1),(2,nsubj,PRON|NOUN,,R)><(1),(3,dobj,NOUN,,R)>
+
+# I like the Nimh cells for longer life and no memory
+## 13 优化
+72	<(0,,VERB,,E),(1,nsubj,PRON,,H)><(0),(2,dobj,NOUN,!one,O)><(0),(3,prep,,for|since|because,P)><(3),(4,pobj,NOUN,,R)>
+
+# Like the way it can turns at any angle
+73	<(0,,ADP,,E),(1,pobj,NOUN,way,,P)><(1),(2,det,DET,,P)><(1),(3,relcl,VERB,,R,#TREEROOT#)>
+
+# Messing with rc cars is dangerous and we need laws to protect the children.
+74	<(1,ROOT,AUX,,P),(0,acomp,ADJ,,R)><(1),(2,csubj,VERB,,O,#TREEROOT#)>
+
+# Best solution i've found is to find a bay where you can hang the back end over a grass verge or flower bed and so fir the rest of the van in the bay.
+75	<(1,nsubj,NOUN,,R),(0,amod,ADJ,best,R)><(2,ROOT,AUX,,P),(1)><(2),(3,xcomp,VERB,,O,#TREEROOT#)>
+
+# i loved this
+76	<(0,ROOT,VERB,,E),(1,nsubj,PRON,,H)><(0),(2,dobj,NOUN|PRON|PROPN,,O)>
+77	<(0,ROOT,VERB,,E),(1,dobj,NOUN|PRON|PROPN|VERB,,O)>
+
+# This is a very nice lightweight pack with no whistlesand bells.
+78	<(1,attr,NOUN,,O),(0,amod,ADJ,,R)><(2,ROOT,AUX,be,P),(1)><(2),(3,nsubj,PRON,this,P)><(1),(4,prep,ADP,with,R)><(4),(5,pobj,NOUN,,R)>
+# This is a great and versatile daypack for carrying a laptop, tablet and then some other small items.
+79	<(1,attr,NOUN,,O),(0,amod,ADJ,,R)><(2,ROOT,AUX,be,P),(1)><(2),(3,nsubj,PRON,this,P)><(1),(4,prep,ADP,for,R)><(4),(5,pcomp,VERB,,R)><(5),(6,dobj,NOUN,,R)>
+
+# Conor doesn't have a chance vs Marty
+## 12 优化
+80	<(0,!conj,VERB,,R),(1,nsubj,NOUN|PROPN,,O)><(0),(2,dobj,NOUN,,R)>
+
+# They are great for stowing a phone, keys and access cards that may require easy and quick access.
+81	<(1,ROOT,AUX,,P),(0,acomp,ADJ,great,R)><(1),(2,nsubj,PRON,,P)><(0),(3,prep,ADP,for,R)><(3),(4,pcomp,VERB,,R)><(4),(5,dobj,NOUN,,R)>
+
+# It is fairly well made and the color is a nice deep blue. 
+82	<(0,advmod,ADV,,R),(1,advmod,ADV,!very,R)><(2,acomp,VERB,,R),(0)><(3,ROOT,AUX,,R),(2)><(3),(4,nsubj,PRON,!I|!you|!she|!he,O)>
+
+# The converter seems to be good quality and pretty well made.
+83	<(1,attr,NOUN,,R),(0,amod,ADJ,,R)><(2,xcomp,AUX,be,P),(1)><(3,ROOT,VERB,seem,P),(2)><(3),(4,nsubj,NOUN,,O)>
+
+# This is a very attractive and solidly made cable.
+84	<(1,attr,NOUN,,O),(0,amod,ADJ,,R)><(2,ROOT,AUX,be,P),(1)><(2),(3,nsubj,,this,P)>
+
+# this worked out perfect
+85	<(1,ROOT,VERB,,R),(0,advcl,ADJ,,R)><(1),(2,nsubj,PRON|NOUN|PROPN,,O)>
+
+# I think it's crazy you can ride snow machines on glaciers and in the mountains like that!
+86	<(1,ccomp,AUX,be,P),(0,acomp,ADJ,,O)><(1),(2,nsubj,PRON,it,P)><(1),(3,ccomp,VERB,,R)><(3),(4,dobj,NOUN,,R)>
+
+# We Alaskan’s are so spoiled!
+87	<(1,ROOT,AUX,be,P),(0,acomp,ADJ,,R)><(1),(2,nsubj,PRON|NOUN,,P)><(2),(3,appos,PROPN|NOUN,,O)>
+
+# Wynston is so well behaved
+88	<(1,acomp,ADJ,,R),(0,advmod,ADV,,R)><(2,ROOT,AUX,be,P),(1)><(2),(3,nsubj,PROPN|NOUN,,O)>
+
+# useful info, and love the clear delivery
+89	<(0,,VERB,love,E),(1,dobj,NOUN,,O)>
+
+# excellent for computer monitors to clean the smudges from monitors that dummies mess up with their fingers.
+90	<(0,ROOT,ADJ,,R),(1,advcl,VERB,,O,#TREEROOT#)><(1),(2,mark,SCONJ,for,P)>
+
+# This is the best screen cleaner.
+91	<(1,compound,NOUN,,O),(0,amod,ADJ,,R)><(2,attr,ADJ,,O),(1)>
+
+# Glad you had a nice trip!
+92	<(0,ROOT,INTJ,,E),(1,ccomp,VERB,,R)><(1),(2,nsubj,PRON,,R)><(1),(3,dobj,NOUN,,R)><(3),(4,amod,ADJ,,R)>
+
+# Hi Slim, love watching your video's, your voice is calming to listen too. 😊
+93	<(0,,VERB,,R),(1,nsubj,NOUN,,O)><(0),(2,xcomp,VERB,,R)>
+94	<(0,ROOT,NOUN,,E),(1,acl,VERB,,O)><(1),(2,dobj,NOUN,,O)>
+
+# we enjoyed watching this video from site 1 @ Santee   coastal reserve, making the 700 mile trip from Pa.
+95	<(0,ROOT,VERB,,E),(1,nsubj,PRON,,H)><(0),(2,xcomp,VERB,,O)><(2),(3,dobj,NOUN,,O)>
+
+# Easily able to control both my Flashpoint and Godox strobes!
+96	<(1,ROOT,ADJ,able,R),(0,advmod,ADV,,R)><(1),(2,xcomp,VERB,,R)><(2),(3,dobj,NOUN,,O)><(3),(4,nmod,PROPN,,O)>
+
+# They really cheapened out, you have no choice except to buy a replacement.
+97	<(0,ccomp|ROOT,VERB,,R),(1,nsubj,PRON|NOUN,,O)>
+
+# I am glad you enjoyed your trip
+98	<(1,ROOT,AUX,be,P),(0,acomp,ADJ,glad,E)><(1),(2,nsubj,PRON,,H)><(0),(3,ccomp,VERB,,O,)><(3),(4,dobj,NOUN|PRON,,O)><(3),(5,nsubj,PRON|NOUN,,O)>
+
+# I like it but it's not a high quality picture.
+99	<(1,attr,NOUN,,R),(0,compound,NOUN,,R)><(2,,AUX,be,R),(1)><(2),(3,nsubj,PRON|NOUN,,O)>
+
+# Always enjoy your videos and it was great to have you share your Snowbird adventure including the pros and cons.
+100	<(1,,AUX,be,R),(0,acomp,ADJ,,R)><(1),(2,nsubj,PRON,,P)><(1),(3,advcl,VERB,,O)><(3),(4,dobj,NOUN,,O)>
+
+# man i feel so sad for these worn out, wet and bedraggled little buggies
+101	<(1,ROOT,VERB,feel,P),(0,acomp,ADJ,,E)><(1),(2,nsubj,PRON,,H)><(1),(3,advcl,VERB,,R)>
+
+# Make this a series I love it
+102	<(1,ccomp,NOUN,,O),(0,relcl,VERB,,E)><(0),(2,nsubj,PRON,,H)><(0),(3,dobj,PRON,it|that,P)><(4,ROOT,VERB,,O),(1)>
+
+# It is good you got back safely and only had a few minor problems.
+103	<(1,ROOT,AUX,be,R),(0,acomp,ADJ,,R)><(1),(2,nsubj,PRON,it,P)><(1),(3,ccomp,VERB,,O)><(3),(4,advmod,ADV,,O)><(3),(5,nsubj,PRON,,O)>
+
+# diesel truck gets fantastic mileage already, instead of the usual gas-guzzlers here in US
+104	<(1,ROOT,VERB,,R),(0,dobj,NOUN,,R)><(1),(2,nsubj,NOUN,,O)>
+
+# Good job on patching it up and getting it going again
+105	<(1,ROOT,NOUN,,R),(0,amod,ADJ,,R)><(1),(2,prep,ADP,,P)><(2),(3,pcomp,VERB,,O)>
+
+# building high-quality topic models can be time consuming and involve a significant amount of manual verification and model refinement
+106	<(1,ROOT,AUX,be,P),(0,acomp,VERB,,R)><(1),(2,csubj,VERB,,O,#TREEROOT#)>
+
+# Good that Airpods get its own menu
+107	<(0,ROOT,ADJ,,R),(1,ccomp,VERB,,O)><(1),(2,mark,SCONJ,,P)><(1),(3,nsubj,NOUN,,O)><(1),(4,dobj,NOUN,,O)>
+
+# To defend democracy, as opposed to promoting tyranny, is absolutely paramount
+108	<(1,ROOT,AUX,be,P),(0,acomp,ADJ,,R)><(1),(2,advcl,VERB,,O)><(2),(3,dobj,NOUN,,O)>
+
+# Tim Cook and Apple are hypocrites, clearly caring little about the world and/or human rights, only profitability
+109	<(1,ROOT,AUX,be,P),(0,attr,NOUN,,R)><(1),(2,nsubj,PROPN|NOUN,,O)>
+110	<(1,ROOT,AUX,be,P),(0,advcl,VERB,,R)><(1),(2,nsubj,PROPN|NOUN,,O)>
+
+# My most appreciated feature is the Haptic keyboard.
+111	<(1,nsubj,NOUN,feature,R),(0,amod,ADJ,,R)><(2,ROOT,AUX,be,P),(1)><(2),(3,attr,NOUN,,O)>
+
+# I am most excited for bio-metric password
+112	<(1,ROOT,AUX,be,P),(0,acomp,ADJ,,E)><(1),(2,nsubj,PRON,,H)><(0),(3,prep,ADP,for,P)><(3),(4,pobj,NOUN,,O,#TREEROOT#)>
+
+# most of the banking app’s doesn’t work for me after the update
+113	<(0,!advcl,VERB,,R),(1,prep,ADP,,R)><(1),(2,pobj,PROPN|NOUN,,R)><(0),(3,nsubj,ADJ,most,P)><(3),(4,prep,ADP,of,P)><(4),(5,pobj,PROPN|NOUN,,O)>
+
+# The new FaceID unlock on my 13ProMax is great
+## badcase:!say Ruth is funny, she said "lemme tell you".
+114	<(1,ccomp,AUX,be,P),(0,acomp,ADJ,,R)><(2,ROOT,VERB,!think|!say,O),(1)>
+
+# Very nice that it adds automatic punctation
+115	<(0,ROOT,ADJ,,R),(1,ccomp,VERB,,O,#TREEROOT#)><(1),(2,mark,SCONJ,that,P)>
+
+# The fact that Logitech never bothered to upgrade their Brio 4k only because of their complacency nothing else
+116	<(0,acl,VERB,,R),(1,nsubj,PROPN,,O)><(0),(2,xcomp,VERB,,R)><(2),(3,dobj,NOUN,,R)>
+
+# Amazing for streamers, they'll buy tons of these, but $300.
+117	<(0,ROOT|advcl,ADJ,,R),(1,prep,ADP,for,P)><(1),(2,pobj,NOUN,,O)>
+
+# I am impressed with the insta360 as well
+118	<(1,ROOT,AUX,be,P),(0,acomp,ADJ,impressed,E)><(1),(2,nsubj,PRON,,H)>
+119	<(1,ROOT,AUX,be,P),(0,acomp,ADJ,,E)><(1),(2,nsubj,PRON,,H)><(0),(3,prep,ADP,with,,P)><(3),(4,pobj,NOUN,,O)>
+
+# It is bug.
+120	<(1,ROOT,AUX,be,P),(0,attr,NOUN,,R)><(1),(2,nsubj,PRON,,O)>
+
+# I like that they improved the sharing of wifi password.
+## 64 相似
+121	<(0,ROOT,VERB,,E),(1,ccomp,VERB,,R)><(0),(2,nsubj,PRON|NOUN,,H)><(1),(3,mark,SCONJ,,P)><(1),(4,dobj,NOUN,,R,#TREEROOT#)>
+
+# You dont know how happy i am that they used inches for tube sized sensors, and mm for film size,
+122	<(1,ccomp,AUX,be,P),(0,acomp,ADJ,,E)><(1),(2,nsubj,PRON,,H)><(1),(3,ccomp,VERB,,R,#TREEROOT#)><(3),(4,mark,SCONJ,,P)>
+
+# Love watching these types of videos
+123	<(0,ROOT,VERB,,E),(1,advcl,VERB,,O)><(1),(2,dobj,NOUN,,O)><(2),(3,prep,ADP,,O)><(3),(4,pobj,NOUN,,O)>
+124	<(0,ROOT,VERB,,E),(1,advcl,VERB,,O)><(1),(2,dobj,NOUN,,O,#TREEROOT#)>
+
+# The most helpful feature is editing iMessages
+125	<(1,nsubj,NOUN,feature,R),(0,amod,ADJ,,R)><(2,ROOT,VERB,,O),(1)><(2),(3,dobj,NOUN,,O)><(2),(4,aux,AUX,be,P)>
+
+## this is being better, and no, she doesn't understand what you want, or what you are saying.
+126	<(1,ROOT,AUX,be,R),(0,acomp,ADJ,,R)><(1),(2,aux,AUX,be,P)><(1),(3,nsubj,PRON|NOUN|PROPN,,O)>
+
+## Scolding her does absolutely nothing.
+## #ANCHOR# 自定义special规则
+127	<(0,ROOT,VERB,do,R,#ANCHOR#),(1,dobj,PRON,nothing,R)><(0),(2,csubj,VERB,,O)>
+
+## Great value for the money
+## 与27/70的区别
+128	<(1,attr|ROOT,NOUN,,R),(0,amod,ADJ|VERB,,R)><(1),(2,prep,ADP,for,P)><(2),(3,pobj,NOUN|VERB,,O)>
+
+# My son likes to bring them everywhere with us because they are such a great size for travel.
+## 与 93 的区别
+129	<(0,ROOT,VERB,,E),(1,nsubj,NOUN,,H)><(0),(2,xcomp,VERB,,O)><(2),(3,dobj,PRON|NOUN,,O)><(2),(4,advmod,ADV,,O)>
+
+# They were definitely a great choice and I am so glad that I picked them up for my son!
+130	<(1,,AUX,be,P),(0,acomp,ADJ,,E)><(1),(2,nsubj,PRON,,H)><(0),(3,ccomp,VERB,,O)><(3),(4,dobj,PRON|NOUN,,O)>

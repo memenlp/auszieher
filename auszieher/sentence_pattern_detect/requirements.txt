@@ -1,0 +1,9 @@
+-i https://maven.tuya-inc.top/repository/pypi-group/simple
+sanic==20.6.3
+pyyaml==5.3.1
+loguru==0.4.1
+pandas
+torch
+transformers
+sacremoses
+onnxruntime

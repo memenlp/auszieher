@@ -1,0 +1,4 @@
+# object	reason	sentscore
+	not bad	0.7
+none	available	-0.7
+price	high	-0.7

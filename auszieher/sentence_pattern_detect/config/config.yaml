@@ -1,0 +1,15 @@
+local:
+  NAME: sentence_pattern
+  HOST: 0.0.0.0
+  PORT: 8000
+  DEBUG: False
+  ACCESS_LOG: False
+  AUTO_RELOAD: False
+  WORKERS: 1
+  DATA_DIR: ./data/model
+  LOG_DIR: ./logs
+  BATCH_SIZE: 8
+  AREA: cn                                     # 部署区：cn（中国）、us（美国）、eu（欧洲）
+  SERVICE_TYPE: test                           # 测试（test）、应用（app）
+  SERVICE_ENV: local                           # 本地（local）、开发（dev）、线上（online）
+  MACHINE: 1                                   # 部署机器编号
