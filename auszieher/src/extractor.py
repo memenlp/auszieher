@@ -494,9 +494,11 @@ class Extractor(object):
         for h, e, o, r in permutations:
             # 否定处理，只处理emotion, reason
             ## emotion
-            e_isneg, e_neg_tokenids = self.neg_process(e, groups.anchor_neg)
+            e_isneg, e_neg_tokenids = self.neg_process(e, groups.neg_group)
+            # e_isneg, e_neg_tokenids = self.neg_process(e, groups.anchor_neg)
             ## reason
-            r_isneg, r_neg_tokenids = self.neg_process(r, groups.anchor_neg)
+            r_isneg, r_neg_tokenids = self.neg_process(r, groups.neg_group)
+            # r_isneg, r_neg_tokenids = self.neg_process(r, groups.anchor_neg)
             comment_tokenids = set.union(h, e, o, r, set(placeholder_tokenids))
             h_sorted = sorted(h)
             e_sorted = sorted(e)
@@ -709,6 +711,8 @@ class Extractor(object):
             holder, emotion, fobject, reason, comment, meanless, e_isneg, e_neg_tokenids, \
                 r_isneg, r_neg_tokenids = result
 
+            match_pattern = result_patternids[sorted_index[i]]
+
             # 如果是有联合情感词匹配的情况下，联合词应该在同一个元素内
             if joint_anchor_flag:
                 _flag = False
@@ -721,11 +725,9 @@ class Extractor(object):
                             _flag = True
                             break
                     if not _flag:
-                        logger.info(f"[FILTER]: [{match_pattern}, holder:{holder}, emotion:{emotion}, "   \
+                        logger.info(f"[FILTER]: [{match_pattern}, [holder:{holder}, emotion:{emotion}, "   \
                             f"object:{fobject}, reason:{reason} by joint sentiment token not in same element!!!")
                         continue
-
-            match_pattern = result_patternids[sorted_index[i]]
 
             if len(fobject)>0 and self._span_matched_ratio(fobject)<0.25:
                 logger.info(f"[FILTER]: [{match_pattern}, holder:{holder}, emotion:{emotion}, "   \

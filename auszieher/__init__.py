@@ -126,6 +126,7 @@ class Executor(object):
             groups = self.phrase_parser(doc)
 
             logger.debug(f"phrase_groups: {groups.phrase_groups}")
+            logger.debug(f"neg_groups: {groups.neg_group}")
             logger.debug(f"cc_groups: {groups.cc_groups}")
             logger.debug(f"poss_groups: {groups.poss_group}")
             logger.debug(f"prt_groups: {groups.prt_group}")

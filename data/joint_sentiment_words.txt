@@ -1,7 +1,7 @@
 break down	-1.0
 wear out	-1.0
 cheapen out	1.0
-high quality	1.0
+#high quality	1.0
 fantastic mileage	1.0
 time consume	1.0
 pricy side	1.0
@@ -14,4 +14,5 @@ get the like	1.0
 make my day	1.0
 put up with	-1.0
 no longer able	-1.0
-
+well construct	1.0
+long enough	1.0

@@ -53,7 +53,7 @@
 17	<(0,ROOT,ADJ,,R),(0,ROOT,ADJ,,R)>
 
 # it is easy to get your hands on
-18	<(1,,AUX,be,P),(0,,,,R)><(1),(2,nsubj,PRON,it,O)><(1),(3,xcomp,VERB,,R)><(3),(4,dobj,NOUN,,R)>
+18	<(1,,AUX,be,R),(0,,,,R)><(1),(2,nsubj,PRON,it,O)><(1),(3,xcomp,VERB,,R)><(3),(4,dobj,NOUN,,R)>
 
 # the battery it's durable
 19	<(1,,AUX,be,R),(0,,,,R)><(1),(2,dep,NOUN,,O)>
@@ -84,7 +84,7 @@
 # poor network connection
 # stb box not compatible with zgemma / air digital.
 ## !attr: [badcase]: Flashlight, find my phone features are a good addition.
-27	<(1,pobj|conj|!attr|dobj|dep|ROOT,NOUN|PROPN,,O,,,!for),(0,amod,ADJ|VERB,,R)>
+27	<(1,pobj|conj|!attr|dobj|dep|ROOT|compound,NOUN|PROPN,,O,,,!for),(0,amod,ADJ|VERB,,R)>
 
 # the book is funnily
 28	<(1,,AUX,be,R),(0,,,,R)><(1),(2,nsubj,NOUN,!reason,O)>
@@ -180,7 +180,7 @@
 
 # works great
 ##TODO: badcase: easy to set up and i love that the watch comes on with a slight turn of the wrist. 
-57	<(1,ROOT|conj,VERB,!love,R),(0,advmod,ADJ|ADV,,R)>
+57	<(1,ROOT|conj|oprd,VERB,!love,R),(0,advmod,ADJ|ADV,,R)>
 
 # Fit well but blue screen makes screen hard to read
 ## badcase: It looks quite professional and is very well constructed. 
@@ -324,7 +324,7 @@
 107	<(0,ROOT,ADJ,,R),(1,ccomp,VERB,,O)><(1),(2,mark,SCONJ,,P)><(1),(3,nsubj,NOUN,,O)><(1),(4,dobj,NOUN,,O)>
 
 # To defend democracy, as opposed to promoting tyranny, is absolutely paramount
-108	<(1,ROOT,AUX,be,P),(0,acomp,ADJ,,R)><(1),(2,advcl,VERB,,O)><(2),(3,dobj,NOUN,,O)>
+#108	<(1,ROOT,AUX,be,P),(0,acomp,ADJ,,R)><(1),(2,advcl,VERB,,O)><(2),(3,dobj,NOUN,,O)>
 
 # Tim Cook and Apple are hypocrites, clearly caring little about the world and/or human rights, only profitability
 109	<(1,ROOT,AUX,be,P),(0,attr,NOUN,,R)><(1),(2,nsubj,PROPN|NOUN,,O)>
@@ -390,3 +390,9 @@
 
 # They were definitely a great choice and I am so glad that I picked them up for my son!
 130	<(1,,AUX,be,P),(0,acomp,ADJ,,E)><(1),(2,nsubj,PRON,,H)><(0),(3,ccomp,VERB,,O)><(3),(4,dobj,PRON|NOUN,,O)>
+
+# I am happy for the 28K people who seem pleased with these refurbed iphones.
+131	<(0,,ADJ,,R),(1,prep,ADP,with,R,)><(1),(2,pobj,NOUN,,O)><(2),(3,amod,ADJ,,O)>
+
+# My husband loves it
+132	<(0,ROOT,VERB,,E),(1,nsubj,NOUN,,H)><(0),(2,dobj,PRON|NOUN,,O)>

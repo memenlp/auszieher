@@ -45,12 +45,14 @@ class Groups(object):
         self.poss_group = dict()          # e.g. your husband
         self.default_match_group = defaultdict(dict)
         self.defined_vocab_group = dict()
+        self.neg_group = dict()
 
 class PhraseParser(object):
     PHRASE_DEP = {"compound", "prt"}
     # 处理并列关系
     CC_DEP = "conj"
     ACL_DEP = "acl"
+    NEG_DEP = "neg"
     PREP_DEP= 'prep'
     CC_POS = {"VERB", "NOUN", "ADJ", "AUX", "PROPN"}  #并列关系分组中必须是同为 VERB|NOUN|ADJ 等有意义的pos才处理;
     PRON_POS = "PRON"
@@ -147,10 +149,20 @@ class PhraseParser(object):
         rdep = reverse_dep(doc)
         cc_groups = []
         conj_root_unit_map = dict()
+        anchor_parent_set = set()
+        for token in doc:
+            if token._.anchor:
+                anchor_parent_set.add(token.head.i)
+
         for token in doc:
             if token.dep_ != self.CC_DEP or \
               (token.pos_ not in self.CC_POS) or \
                 (token.pos_ != token.head.pos_):
+                continue
+
+            # badcase: This is a good value, fast delivery, high quality product and good packaging. 
+            if token.i in anchor_parent_set and \
+              token.head.i in anchor_parent_set:
                 continue
 
             # badcase: The repair bill was painful, but it is good to know your snowboard still works.
@@ -258,6 +270,10 @@ class PhraseParser(object):
               token.head.pos_==self.NOUN_POS and \
                 token.head.dep_ == "dobj":
                 groups.tacl_set.add(token.head.i)
+
+            # neg_group
+            elif token.dep_ == self.NEG_DEP:
+                groups.neg_group[token.head.i] = token.i
 
             # PRON 保存指示代词集合
             if token.pos_ == self.PRON_POS:
