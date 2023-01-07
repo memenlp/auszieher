@@ -363,7 +363,8 @@ class Extractor(object):
                         raw, rep = list(raw), list(rep)
                         assert len(raw) == len(rep)
                         for inx, d in enumerate(raw):
-                            ele_g = _ele_group[d]
+                            ele_g = _ele_group.get(d, None)
+                            if not ele_g: continue
                             if d in ele_g['value']:
                                 ele_g['value'].remove(d)
                             ele_g['value'].add(rep[inx])
